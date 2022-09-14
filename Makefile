@@ -6,7 +6,7 @@
 #    By: yoav <yoav@student.42.fr>                  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/05 22:01:15 by alopez-g          #+#    #+#              #
-#    Updated: 2022/09/13 09:57:28 by yoav             ###   ########.fr        #
+#    Updated: 2022/09/14 10:17:35 by yoav             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -62,6 +62,9 @@ $(addprefix $(TEST_DIR)/, %.t.o): $(addprefix $(TEST_DIR)/, %.t.c)
 .PHONY: clean fclean re all check
 
 all: $(OBJ_DIR) $(NAME)
+
+t:
+	echo "Hey" > t
 
 $(LIBFT):
 	@$(MAKE) -sC $(LIBFT_DIR)
